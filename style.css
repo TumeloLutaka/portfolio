@@ -197,7 +197,7 @@ ul {
 .resume-section h2 div {
     position: absolute;
     left: 0%;
-    transform: translate(150&);
+    transform: translate(-150%);
     aspect-ratio: 1;
     height: 100%;
     border-radius: 50%;
