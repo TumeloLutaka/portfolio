@@ -4,10 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tumelo - Personal Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">Tumelo <span class="text-primary">Lutaka</span></div>
+            
+            <nav class="nav-links-container">
+                <a href="#hero-section">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Projects</a>
+                <a href="#">contact</a>
+            </nav>
+        </div>
+    </header>
+
     <section id="hero-section" class="hero-section">
+        <div class="container hero-container">
+            <div class="column">
+                <h2>Hello, <span class="text-primary">I'm</span></h2>
+                <h1 class="hero-text-name text-primary">Tumelo Lutaka</h1>
+                <h2>your stellar full-stack web developer</h2>
+                <p>
+                    With expert knowledge in web development and UI/UX design, I offer the best 
+                    results in devlivering quality projects for clients with great taste and passion.
+                </p>
+                <button class="btn btn-primary" type="button">Let's Talk</button>
+                <div class="social-icons">
+                    <a href="https://github.com/TumeloLutaka"><img src="./images/github-icon.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/tumelo-lutaka-3b5b8521b/"><img src="./images/linkedin-icon.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="column">
+                <img src="./images/Graphic.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var sections = document.querySelectorAll('section');
+            var navLinks = document.querySelectorAll('nav a');
+
+            sections.forEach(function(section) {
+                var top = section.offsetTop;
+                var height = section.clientHeight;
+                if (pageYOffset >= top && pageYOffset < top + height) {
+                    navLinks.forEach(function(link) {
+                        link.classList.remove('active');
+                    });
+                    var currentNavLink = document.querySelector('nav a[href="#' + section.id + '"]');
+                    if (currentNavLink) {
+                        currentNavLink.classList.add('active');
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- <section id="hero-section" class="hero-section">
         <div class="graphic"></div>
         <div class="container">
             <h1>Hi, I'm Tumelo Lutaka</h1>
@@ -132,7 +190,7 @@
 
     <footer>
         <p>© Tumelo Lutaka 2024</p>
-    </footer>
+    </footer> -->
     
 </body>
 </html>
