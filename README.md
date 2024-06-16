@@ -1,16 +1,22 @@
-# Responsive Portfolio Website Tailor
-## [Watch it on youtube](https://youtu.be/sF0vW0GgL3U)
-### Responsive Portfolio Website Tailor
+# Tumelo Lutaka's Portfolio
 
-- Responsive Portfolio Website Using HTML CSS And JavaScript
-- Contains animations when scrolling.
-- Smooth scrolling in each section.
-- Contains a beautiful dark theme.
-- The color of the project can be customized.
-- Sending emails in the contact section.
-- Developed first with the Mobile First methodology, then for desktop.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+Welcome to my personal portfolio! Here you can explore my work, skills, and experiences.
 
-💙 Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/@Bedimcode)
+## About Me
+I'm Tumelo Lutaka, a passionate [your profession, e.g., web developer, graphic designer, etc.]. I specialise in creating innovative solutions and delivering high-quality projects.
 
-![preview img](/preview.png)
+## Sections
+
+- **Home**: An overview of who I am and what I do.
+- **Projects**: A showcase of my best work, including descriptions and links.
+- **Skills**: A list of my professional skills and proficiencies.
+- **Contact**: How to get in touch with me for collaborations or inquiries.
+
+## Get in Touch
+Feel free to contact me via [your email] or connect with me on [social media links].
+
+Thank you for visiting!
+
+---
+
+Feel free to adjust the text to better fit your style and the specifics of your portfolio.
