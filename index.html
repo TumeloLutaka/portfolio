@@ -1,246 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tumelo - Personal Website</title>
-    <link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <header>
-        <div class="container header-container">
-            <div class="logo">Tumelo <span class="text-primary">Lutaka</span></div>
-            
-            <nav class="nav-links-container">
-                <a href="#hero-section">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Projects</a>
-                <a href="#">contact</a>
-            </nav>
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Responsive portfolio website - Bedimcode</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Tumelo</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="#home" class="nav__link active__link">Home</a>
+            </li>
+            <li>
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li>
+              <a href="#info" class="nav__link">My Info</a>
+            </li>
+            <li>
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav__link">Contact Me</a>
+            </li>
+          </ul>
+
+          <!-- close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-large-line"></i>
+          </div>
         </div>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
     </header>
 
-    <section id="hero-section" class="hero-section">
-        <div class="container flexbox-row hero-container">
-            <div class="content">
-                <h2>Hello, <span class="text-primary">I'm</span></h2>
-                <h1 class="hero-text-name text-primary">Tumelo Lutaka</h1>
-                <h2>your stellar full-stack web developer</h2>
-                <p>
-                    With expert knowledge in web development and UI/UX design, I offer the best 
-                    results in devlivering quality projects for clients with great taste and passion.
-                </p>
-                <button class="btn btn-primary" type="button">Let's Talk</button>
-                <div class="social-icons">
-                    <a href="https://github.com/TumeloLutaka"><img src="./images/github-icon.svg" alt=""></a>
-                    <a href="https://www.linkedin.com/in/tumelo-lutaka-3b5b8521b/"><img src="./images/linkedin-icon.svg" alt=""></a>
-                </div>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <img
+            src="/assets/img/home-perfil.png"
+            alt="image"
+            class="home__img"
+          />
+
+          <div class="home__data">
+            <h1 class="home__name">Tumelo <br />Lutaka</h1>
+            <h3 class="home__profession">Web Developer</h3>
+          </div>
+
+          <a href="#work" class="home__scroll">
+            <div class="home__scroll-box">
+              <i class="ri-arrow-down-line"></i>
             </div>
-            <div class="content">
-                <img src="./images/Graphic.svg" height="500" alt="">
+
+            <span class="home__scroll-text">Recent Works</span>
+          </a>
+        </div>
+      </section>
+
+      <!--==================== WORKS ====================-->
+      <section class="work section" id="work">
+        <h2 class="section__title">RECENT WORKS</h2>
+
+        <div class="work__container container grid">
+          <article class="work__card">
+            <a href="#" target="_blank" class="work__link">
+              <h2 class="work__title">Restaurant Website</h2>
+              <p class="work__description">
+                Short description of the project that was carried out in this
+                portfolio
+              </p>
+
+              <img src="assets/img/work-1.jpg" alt="image" class="work__img" />
+
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+
+          <article class="work__card">
+            <a href="#" target="_blank" class="work__link">
+              <h2 class="work__title">Design of Products</h2>
+              <p class="work__description">
+                Short description of the project that was carried out in this
+                portfolio
+              </p>
+
+              <img src="assets/img/work-2.jpg" alt="image" class="work__img" />
+
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+
+          <article class="work__card">
+            <a href="#" target="_blank" class="work__link">
+              <h2 class="work__title">Barbershop Website SEO</h2>
+              <p class="work__description">
+                Short description of the project that was carried out in this
+                portfolio
+              </p>
+
+              <img src="assets/img/work-3.jpg" alt="image" class="work__img" />
+
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+
+          <article class="work__card">
+            <a href="#" target="_blank" class="work__link">
+              <h2 class="work__title">Coffee Website</h2>
+              <p class="work__description">
+                Short description of the project that was carried out in this
+                portfolio
+              </p>
+
+              <img src="assets/img/work-4.jpg" alt="image" class="work__img" />
+
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+
+          <article class="work__card">
+            <a href="#" target="_blank" class="work__link">
+              <h2 class="work__title">Panel Design</h2>
+              <p class="work__description">
+                Short description of the project that was carried out in this
+                portfolio
+              </p>
+
+              <img src="assets/img/work-5.jpg" alt="image" class="work__img" />
+
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== INFO ====================-->
+      <section class="info section" id="info">
+        <h2 class="section__title">MY INFO</h2>
+
+        <div class="info__container container grid">
+          <!-- ABOUT -->
+          <div class="about grid">
+            <div class="about__content">
+              <h3 class="info__title">About Me</h3>
+              <p class="about__description">
+                Passionate about creating
+                <b>Websites with beautiful interfaces</b>. I have years of
+                experience in <b>Web Development</b> with several projects
+                completed.
+              </p>
+
+              <a
+                href="assets/pdf/Tailor-Cv.pdf"
+                download=""
+                target="_blank"
+                class="button about__button"
+                >Download CV</a
+              >
             </div>
-        </div>
-    </section>
 
-    <section id="about-section" class="about-section">
-        <div class="container about-container">
-            <div class="column flexbox-row">
-                <div class="content">
-                    <img src="./images/Graphic.svg" height="500" alt="">
+            <img
+              src="assets/img/info-perfil.png"
+              alt="image"
+              class="about__img"
+            />
+          </div>
+          <!-- EXPERIENCE -->
+          <div class="experience">
+            <h3 class="info__title">Experience</h3>
+
+            <div class="experience__content grid">
+              <div class="experience__data">
+                <h2 class="experience__company">Discord</h2>
+
+                <div>
+                  <h3 class="experience__profession">Web Product Designer</h3>
+                  <span class="experience__date">05/23 - present</span>
+                  <p class="experience__description">
+                    Sort description of the work you do or did for in the
+                    company
+                  </p>
                 </div>
-                <div class="content">
-                    <h3>My <span class="text-primary">Intro</span></h3>
-                    <h2 class="bold" >About Me</h2>
-                    <p>
-                        Frontend developer , I create web pages with UI /UX user interfaces, U have years of experience
-                        and many clients are happy with the projects carried out.
-                    </p>
-                    <button class="btn btn-primary" type="button">Contact Me</button>
+              </div>
+
+              <div class="experience__data">
+                <h2 class="experience__company">Google</h2>
+
+                <div>
+                  <h3 class="experience__profession">Web Developer</h3>
+                  <span class="experience__date">05/21 - 02/22</span>
+                  <p class="experience__description">
+                    Sort description of the work you do or did for in the
+                    company
+                  </p>
                 </div>
+              </div>
+
+              <div class="experience__data">
+                <h2 class="experience__company">Adobe</h2>
+
+                <div>
+                  <h3 class="experience__profession">Web Designer</h3>
+                  <span class="experience__date">01/20 - 03/21</span>
+                  <p class="experience__description">
+                    Sort description of the work you do or did for in the
+                    company
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="column flexbox-row">
-                <div class="content">
-                    <h3>Favourite <span class="text-primary">Skills</span></h3>
-                    <h2 class="bold" >My Skills</h2>
-                    <p>
-                        See what skills I have and perform, to develop develop projects for you                  </p>
-                    <button class="btn btn-primary" type="button">See Full Projects</button>
-                </div>
-                <div class="content">
-                    <ul class="skill-list">
-                        <li class="skill-list-item">
-                            <p class="subtitle-large"><span class="text-primary">01.</span> HTML & CSS</p>
-                        </li>
-                        <li class="skill-list-item">
-                            <p class="subtitle-large"><span class="text-primary">02.</span> Javascript</p>
-                        </li>
-                        <li class="skill-list-item">
-                            <p class="subtitle-large"><span class="text-primary">03.</span> React</p>
-                        </li>
-                        <li class="skill-list-item">
-                            <p class="subtitle-large"><span class="text-primary">04.</span> Git & Github</p>
-                        </li>
-                        <li class="skill-list-item">
-                            <p class="subtitle-large"><span class="text-primary">05.</span> Figma</p>
-                        </li>
-                        <li class="skill-list-item">
-                            <p class="subtitle-large"><span class="text-primary">06.</span> Webflow</p>
-                        </li>
-                    </ul>
-                </div>
+          </div>
+
+          <!-- SKILLS -->
+          <div class="skills">
+            <h3 class="info--title">Skills</h3>
+
+            <div class="skills__content grid">
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-html.svg"
+                  alt="image"
+                  class="skills__img"
+                />
+                <span class="skills__name">HTML</span>
+              </div>
+
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-css.svg"
+                  alt="image"
+                  class="skills__img"
+                />
+                <span class="skills__name">CSS</span>
+              </div>
+
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-javascript.svg"
+                  alt="image"
+                  class="skills__img"
+                />
+                <span class="skills__name">JavaScript</span>
+              </div>
+
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-react.svg"
+                  alt="image"
+                  class="skills__img"
+                />
+                <span class="skills__name">React</span>
+              </div>
+
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-git.svg"
+                  alt="image"
+                  class="skills__img"
+                />
+                <span class="skills__name">Git</span>
+              </div>
+
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-github.svg"
+                  alt="image"
+                  class="skills__img"
+                />
+                <span class="skills__name">Github</span>
+              </div>
+
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-tailwind-css.svg"
+                  alt="image"
+                  class="skills__img"
+                />
+                <span class="skills__name">Tailwind</span>
+              </div>
+
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-sass.svg"
+                  alt="image"
+                  class="skills__img"
+                />
+                <span class="skills__name">Sass</span>
+              </div>
+
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-figma.svg"
+                  alt="image"
+                  class="skills__img"
+                />
+                <span class="skills__name">Figma</span>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title">SERVICES</h2>
 
-    <script>
-        window.addEventListener('scroll', function() {
-            var sections = document.querySelectorAll('section');
-            var navLinks = document.querySelectorAll('nav a');
+        <div class="services__container container grid">
+          <article class="services_card">
+            <i class="ri-code-box-line services__icon"></i>
 
-            sections.forEach(function(section) {
-                var top = section.offsetTop;
-                var height = section.clientHeight;
-                if (pageYOffset >= top && pageYOffset < top + height) {
-                    navLinks.forEach(function(link) {
-                        link.classList.remove('active');
-                    });
-                    var currentNavLink = document.querySelector('nav a[href="#' + section.id + '"]');
-                    if (currentNavLink) {
-                        currentNavLink.classList.add('active');
-                    }
-                }
-            });
-        });
-    </script>
-    <!-- <section id="hero-section" class="hero-section">
-        <div class="graphic"></div>
-        <div class="container">
-            <h1>Hi, I'm Tumelo Lutaka</h1>
-            <h2>A <span class="span-text-primary">Web Developer</span></h2>
-            <p>I am a dynamic and dedicated Programmer with a focus on Web and Software Development. </p>
+            <h3 class="services__title">Web Development</h3>
+            <p class="services__description">
+              Short description of the service offered to users to obtain a
+              personalized project
+            </p>
+          </article>
+
+          <article class="services_card">
+            <i class="ri-pencil-ruler-2-line services__icon"></i>
+
+            <h3 class="services__title">Web Design</h3>
+            <p class="services__description">
+              Short description of the service offered to users to obtain a
+              personalized project
+            </p>
+          </article>
+
+          <article class="services_card">
+            <i class="ri-layout-2-line services__icon"></i>
+
+            <h3 class="services__title">Responsive Web Design</h3>
+            <p class="services__description">
+              Short description of the service offered to users to obtain a
+              personalized project
+            </p>
+          </article>
+
+          <article class="services_card">
+            <i class="ri-seo-line services__icon"></i>
+
+            <h3 class="services__title">Seo (web Pages)</h3>
+            <p class="services__description">
+              Short description of the service offered to users to obtain a
+              personalized project
+            </p>
+          </article>
         </div>
-    </section>
+      </section>
 
-    <section id="resume-section" class="resume-section">
-        <div class="container">
-            <h1 class="section-header">My <span class="span-text-primary">Resume</span></h1>
-            <p>Here is a snapshot of my educational background, work experience, key skills etc. from my resume.</p>
-            <ul>
-                <li>
-                    <h2><div></div>Education</h2>
-                    <p>
-                        Bachelor's Degree in Information Technology (Web and Software Development) at Northrise University,
-                        Zambia, February 2019 - June 2023
-                    </p>
-                </li>
-                <li>
-                    <h2><div></div>Work Experience</h2>
-                    <p>
-                        Assistant User Acceptance Testing Developer at Wiphan Care Ministries, September 2023 - Present
-                    </p>
-                </li>
-                <li>
-                    <h2><div></div>Skills</h2>
-                    <ul>
-                        <li><p>Programming</p></li>
-                        <li><p>Excel</p></li>
-                        <li><p>Communication</p></li>
-                    </ul>
-                </li>
-            </ul>
-            <p class="link-text">For full details, please click <a href="https://tumelolutaka.github.io/html-portfolio/">here</a> to view my complete resume.</p>
-            <div class="divider"></div>
-        </div>
-    </section>
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">CONTACT ME</h2>
 
-    <section class="projects-section">
-        <div class="container">
-            <h1 class="section-header">My <span class="span-text-primary">Projects</span></h1>
-            <ul>
-                <li>
-                    <img src="./images/tindog.png" alt="project image">
-                    <h2>Tindog - Bootstraps Project</h2>
-                    <p>
-                        Experience the result of my coding bootcamp journey: Tindog. A Bootstrap-powered website, 
-                        Tindog reimagines Tinder for our furry friends. Merging sleek design with canine companionship, 
-                        this project showcases my expertise in web development
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/dice-game.png" alt="project image">
-                    <h2>Dice Game</h2>
-                    <p>A  project from my coding bootcamp, this endeavour serves as an exercise
-                         in DOM manipulation. With each refresh, the website dynamically generates random dice 
-                         numbers, providing an engaging platform for honing skills in JavaScript and
-                         DOM manipulation.
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/drum-kit.png" alt="project image">
-                    <h2>Drum Kit</h2>
-                    <p>
-                        Developed as a showcase of dynamic web interactivity, this project maps specific keys to corresponding drum sounds, 
-                        allowing users to trigger beats with a simple click or keyboard press.
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/simon-game.png" alt="project image">
-                    <h2>simon-game</h2>
-                    <p> 
-                        Inspired by the classic Simon electronic game, this project pushes the boundaries of interactive 
-                        web development. Through intricate jQuery manipulation, this project has players engage 
-                        in a test of memory and reflexes, replicating the gameplay experience of the iconic Simon game.
-                    </p>
-                </li>
-            </ul>
-            <div class="divider"></div>
-        </div>
-    </section>
-
-    <section class="about-section">
-        <div class="container">
-            <h1 class="section-header">About <span class="span-text-primary">Me</span></h1>
-            <div class="content">
-                <h2>
-                    Hello again! My name is, <span class="span-text-primary">Tumelo Lutaka</span>  and this is a website I created while taking the The Complete 2024 
-                    Web Development Bootcamp by Angela Yu
-                </h2>
-                <p>
-                    I'm an avid football fan who loves the thrill of the game. When I'm not cheering for my favorite team, 
-                    you'll often find me honing my skills on the pool table or diving into immersive video game worlds. I also enjoy unwinding with a good movie or getting lost in the pages of a gripping novel.
-                </p>
+        <div class="contact__container container grid">
+          <form action="" class="contact__form grid" id="contact-form">
+            <div class="contact__group grid">
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Names"
+                required
+                class="contact__input"
+              />
+              <input
+                type="text"
+                name="user_email"
+                placeholder="Email"
+                required
+                class="contact__input"
+              />
             </div>
-            <div class="divider"></div>
-        </div>
-    </section>
 
-    <section class="contact-section">
-        <div class="container">
-            <h1 class="section-header">Get In <span class="span-text-primary">Touch</span></h1>
-            <div class="content">
-                <div class="content-left">
-                    <h2>Contact <span class="span-text-primary">Information</span></h2>
-                    <p>Phone Number: +260 967883107</p>
-                    <p>Email Address: tumelolutakacode@gmail.com</p>
-                    <div class="socials">
-                        <a href="https://www.linkedin.com/in/tumelo-lutaka-3b5b8521b/">LinkedIn</a>
-                        <a href="https://tumelolutaka.github.io/html-portfolio/">Portfolio</a>
-                    </div>
-                    <h3>I'll be glad to hear from you!</h3>
-                </div>
-                <div class="content-right">
-                    <img src="./images/squriell.png" alt="squriell graphic">
-                </div>
-            </div>
-        </div>
-    </section>
+            <textarea
+              name="user_message"
+              id=""
+              placeholder="Message"
+              required
+              class="contact__input contact__area"
+            ></textarea>
 
-    <footer>
-        <p>© Tumelo Lutaka 2024</p>
-    </footer> -->
-    
-</body>
+            <button type="submit" class="button contact__button">
+              Send Message
+            </button>
+
+            <p class="contact_-message" id="contact-message"></p>
+          </form>
+
+          <div class="contact__social grid">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="contact__social-link"
+            >
+              <i class="ri-facebook-line"></i>
+              <span>Facebook</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              class="contact__social-link"
+            >
+              <i class="ri-linkedin-box-line"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://www.github.com/"
+              target="_blank"
+              class="contact__social-link"
+            >
+              <i class="ri-github-line"></i>
+              <span>Github</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <ul class="footer__links">
+          <li>
+            <a href="#home" class="footer__link">Home</a>
+            <a href="#work" class="footer__link">Work</a>
+            <a href="#info" class="footer__link">Info</a>
+          </li>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; All Rights Reserved By Tumelo Lutaka
+        </span>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
