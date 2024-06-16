@@ -3,7 +3,7 @@
 Welcome to my personal portfolio! Here you can explore my work, skills, and experiences.
 
 ## About Me
-I'm Tumelo Lutaka, a passionate [your profession, e.g., web developer, graphic designer, etc.]. I specialise in creating innovative solutions and delivering high-quality projects.
+I'm Tumelo Lutaka, a passionate Web Developer. I specialise in creating innovative solutions and delivering high-quality projects.
 
 ## Sections
 
