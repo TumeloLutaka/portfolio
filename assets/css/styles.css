@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -30,7 +31,8 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Syne", sans-serif;
+  --body-font: "DM Sans", sans-serif;
+  /* --body-font: "Syne", sans-serif; */
   --biggest-font-size: 3rem;
   --big-font-size: 1.5rem;
   --h1-font-size: 1.5rem;
@@ -273,6 +275,7 @@ img {
 }
 
 .home__name {
+  font-family: "Syne", sans-serif;
   font-size: var(--biggest-font-size);
   font-weight: var(--font-bold);
   word-break: break-word;

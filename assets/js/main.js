@@ -113,3 +113,6 @@ sr.reveal ('.home__scroll', {delay:800})
 sr.reveal ('.work__card', {interval:100})
 sr.reveal ('.about__content', {origin:'right'})
 sr.reveal ('.about__img', {origin:'left'})
+
+
+/*=============== PROJECT IMAGE PREVIEW ===============*/
