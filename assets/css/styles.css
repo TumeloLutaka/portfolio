@@ -207,7 +207,7 @@ img {
 
 .nav__link::after {
   content: "";
-  width: 100%;
+  width: 0;
   height: 2px;
   background-color: var(--first-color-light);
   position: absolute;
