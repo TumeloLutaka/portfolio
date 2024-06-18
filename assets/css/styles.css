@@ -254,7 +254,7 @@ img {
   color: var(--first-color-light);
 }
 
-.active__link:hover {
+.active__link::after {
   width: 30%;
 }
 
