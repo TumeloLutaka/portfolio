@@ -13,7 +13,7 @@ I'm Tumelo Lutaka, a passionate Web Developer. I specialise in creating innovati
 - **Contact**: How to get in touch with me for collaborations or inquiries.
 
 ## Get in Touch
-Feel free to contact me via [your email] or connect with me on [social media links].
+Feel free to contact me via tumelolutakacode@gmail.com or connect with me on [social media links].
 
 Thank you for visiting!
 
