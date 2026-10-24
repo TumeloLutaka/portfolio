@@ -1,22 +1,68 @@
-# Tumelo Lutaka's Portfolio
+# Tumelo Lutaka — Portfolio
 
-Welcome to my personal portfolio! Here you can explore my work, skills, and experiences.
+A personal portfolio built with React, TypeScript, Vite, and plain CSS. Warm neutrals, an olive accent, real project screenshots, and a small set of components. No router, state library, or UI framework.
 
-## About Me
-I'm Tumelo Lutaka, a passionate Web Developer. I specialise in creating innovative solutions and delivering high-quality projects.
+## Run locally
 
-## Sections
+Use Node.js 22.12+ (Node 24 is also supported).
 
-- **Home**: An overview of who I am and what I do.
-- **Projects**: A showcase of my best work, including descriptions and links.
-- **Skills**: A list of my professional skills and proficiencies.
-- **Contact**: How to get in touch with me for collaborations or inquiries.
+```sh
+npm install
+npm run dev
+```
 
-## Get in Touch
-Feel free to contact me via tumelolutakacode@gmail.com or connect with me on [social media links].
+Open the local URL printed by Vite. Use `npm ci` instead of `npm install` for a clean installation from the lockfile.
 
-Thank you for visiting!
+## Check and build
 
----
+```sh
+npm run typecheck
+npm run build
+npm run preview
+```
 
-Feel free to adjust the text to better fit your style and the specifics of your portfolio.
+The build checks TypeScript and creates a static site in `dist/`. Deploy that folder to any static host, using `npm run build` as the build command. Relative asset paths support hosting under a subdirectory, including GitHub Pages. The site has no server or environment variables to configure.
+
+## Edit the portfolio
+
+| What to change | Where |
+| --- | --- |
+| Project titles, links, categories, descriptions, tags, and preview filenames | `src/data/projects.ts` |
+| Introduction, about text, skills, and footer | `src/App.tsx` |
+| Navigation | `src/components/Header.tsx` |
+| Project cards and category filtering | `src/components/Projects.tsx` |
+| Email, social links, and copy feedback | `src/components/Contact.tsx` |
+| Palette, typography, layout, and responsive styles | `src/styles.css` |
+| Page title, description, and font loading | `index.html` |
+| Portrait and project screenshots | `public/images/` |
+| Downloadable CV | `public/Tumelo-Lutaka-CV.pdf` |
+
+To add a project, add an entry to the `projects` array and place its screenshot in `public/images/projects/`. Counts and filters update automatically. Preview images are local JPEG screenshots captured from the supplied project URLs; they do not require a screenshot service. Replace a screenshot when its project changes, ideally using a 1280 × 720 viewport.
+
+Contact uses a `mailto:` link, which opens the visitor’s email app. The copy button is an alternative and shows feedback if browser clipboard access is unavailable. There is no contact form or EmailJS dependency. Clipboard access requires HTTPS or localhost.
+
+The site uses the existing portrait, CV, email, and social links. The CV is retained as supplied; update the PDF separately when its contents change. Project descriptions distinguish concepts and learning projects from client work. The Render-hosted blog may take time to wake up. Total 20’s frontend is reachable, but multiplayer play also depends on its separate game server.
+
+The Google-hosted DM Sans font has system-font fallbacks. All content remains visible without entrance animations, and reduced-motion preferences disable smooth scrolling and transitions.
+
+## Structure
+
+```text
+src/
+  App.tsx
+  main.tsx
+  styles.css
+  components/
+    Contact.tsx
+    Header.tsx
+    Icon.tsx
+    Projects.tsx
+  data/
+    projects.ts
+public/
+  favicon.svg
+  Tumelo-Lutaka-CV.pdf
+  images/
+```
+
+The original tutorial assets remain in `assets/` for reference. The React app only serves the files in `public/` and imports from `src/`.
